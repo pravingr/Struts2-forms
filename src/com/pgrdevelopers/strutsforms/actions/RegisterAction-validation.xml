@@ -16,6 +16,9 @@
 		<field-validator type="email">
 			<message>Enter a valid email</message>
 		</field-validator>
+		<field-validator type="domainNameValidator">
+			<message>Enter a valid domain</message>
+		</field-validator>
 	</field>
 	<field name="password">
 		<field-validator type="requiredstring">
