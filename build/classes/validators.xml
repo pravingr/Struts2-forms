@@ -5,5 +5,5 @@
     
 <validators>
 	<validator name="domainNameValidator"
-		class="com.pgrdevelopers.strutsforms.validators.DomainNameValidator" />
+		class="pgrdevelopers.strutsforms.validators.DomainNameValidator" />
 </validators>

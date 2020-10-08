@@ -1,4 +1,4 @@
-package com.pgrdevelopers.strutsforms.actions;
+package pgrdevelopers.strutsforms.actions;
 
 import com.opensymphony.xwork2.ActionSupport;
 

@@ -1,4 +1,4 @@
-package com.pgrdevelopers.strutsforms.validators;
+package pgrdevelopers.strutsforms.validators;
 
 import com.opensymphony.xwork2.validator.ValidationException;
 import com.opensymphony.xwork2.validator.validators.FieldValidatorSupport;
