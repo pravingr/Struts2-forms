@@ -2,24 +2,18 @@ package pgrdevelopers.strutsforms.actions;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class RegisterAction extends ActionSupport{
+public class RegisterAction extends ActionSupport {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1176050329778450175L;
-	
+
 	String fullName;
 	String email;
 	String password;
 	String confirmPassword;
-	
-	
-	public RegisterAction() {
-        System.out.println("constructor of RegisterAction");
-    }
 
-	
 	public String execute() {
 		System.out.println("Inside Register Action execute method");
 		return SUCCESS;
@@ -56,16 +50,15 @@ public class RegisterAction extends ActionSupport{
 	public void setConfirmPassword(String confirmPassword) {
 		this.confirmPassword = confirmPassword;
 	}
-	
-	public void validate(){
+
+	public void validate() {
 		System.out.println("Validating...");
-		System.out.println(fullName+" "+email+" "+password+" "+confirmPassword);
-		if(password!=null||confirmPassword!=null) {
-		if(!password.equals(confirmPassword)) {
-			addFieldError("password","Password does not matching!");
-;		}
+		System.out.println(fullName + " " + email + " " + password + " " + confirmPassword);
+		if (password != null || confirmPassword != null) {
+			if (!password.equals(confirmPassword)) {
+				addFieldError("password", "Password does not matching!");
+			}
 		}
 	}
-
 
 }

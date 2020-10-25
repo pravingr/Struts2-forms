@@ -6,8 +6,7 @@
 
 <struts>
 
-	<package name="forms" namespace="/"
-		extends="struts-default">
+	<package name="forms" namespace="/" extends="struts-default">
 		<action name="login"
 			class="pgrdevelopers.strutsforms.actions.LoginAction">
 			<result name="success">view/home.jsp</result>
